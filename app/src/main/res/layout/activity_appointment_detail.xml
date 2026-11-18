@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:gravity="center_vertical" android:background="@color/primary" android:paddingHorizontal="16dp"><Button android:id="@+id/detail_toolbar_back" style="@style/ToolbarBack" android:text="@string/back_arrow" android:contentDescription="@string/back" /><TextView style="@style/ToolbarTitle" android:text="@string/detail_title" /></LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:clipToPadding="false"
+    android:background="@color/screen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:background="@drawable/card"
+            android:padding="16dp">
+
+            <TextView android:id="@+id/detail_title" style="@style/BodyText"
+                android:textSize="21sp" android:textStyle="bold" />
+            <View style="@style/SectionDivider" />
+            <TextView style="@style/FieldLabel" android:text="@string/location_label" />
+            <TextView android:id="@+id/detail_location" style="@style/BodyText" />
+            <TextView style="@style/FieldLabel" android:text="@string/datetime_label" />
+            <TextView android:id="@+id/detail_datetime" style="@style/BodyText" />
+            <View style="@style/SectionDivider" />
+            <Switch android:id="@+id/detail_reminder"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:minHeight="48dp" android:text="@string/reminder"
+                android:textColor="@color/text_primary" android:textSize="16sp"
+                android:saveEnabled="false" />
+            <TextView android:id="@+id/detail_reminder_status" style="@style/BodyText"
+                android:accessibilityLiveRegion="polite" android:textColor="@color/primary"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button android:id="@+id/detail_back" style="@style/SecondaryButton" android:text="@string/back" />
+        <Button android:id="@+id/delete_button" style="@style/DeleteButton" android:text="@string/delete" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

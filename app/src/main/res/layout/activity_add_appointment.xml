@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:gravity="center_vertical" android:background="@color/primary" android:paddingHorizontal="16dp"><Button android:id="@+id/add_back" style="@style/ToolbarBack" android:text="@string/back_arrow" android:contentDescription="@string/back" /><TextView style="@style/ToolbarTitle" android:text="@string/add_title" /></LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:clipToPadding="false"
+    android:background="@color/screen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:padding="20dp">
+
+        
+        <TextView style="@style/FieldLabel" android:labelFor="@id/appointment_title" android:text="@string/title_label" />
+        <EditText
+            android:id="@+id/appointment_title"
+            style="@style/FieldInput"
+            android:hint="@string/title_hint"
+            android:inputType="textCapSentences"
+            android:imeOptions="actionNext" />
+        <TextView style="@style/FieldHelp" android:text="@string/help_add_appointment_0" />
+        <TextView style="@style/FieldLabel" android:labelFor="@id/appointment_location" android:text="@string/location_label" />
+        <EditText
+            android:id="@+id/appointment_location"
+            style="@style/FieldInput"
+            android:hint="@string/location_hint"
+            android:inputType="textCapSentences"
+            android:imeOptions="actionDone" />
+        <TextView style="@style/FieldHelp" android:text="@string/help_add_appointment_1" />
+        <TextView style="@style/FieldLabel" android:text="@string/date_label" />
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/card"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false" />
+
+        <TextView style="@style/FieldLabel" android:text="@string/time_label" />
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/card"
+            android:timePickerMode="spinner" />
+
+        <Switch
+            android:id="@+id/add_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:minHeight="52dp"
+            android:background="@drawable/card"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:text="@string/add_reminder_label"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+        <Button android:id="@+id/save_button" style="@style/PrimaryButton" android:text="@string/save" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

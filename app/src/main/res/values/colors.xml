@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="screen">#F4F6FC</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="primary">#4134AE</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="text_primary">#182139</color>
+    <color name="text_secondary">#505E78</color>
+    <color name="border">#DCE1F0</color>
+    <color name="badge_active">#E0F5ED</color>
+    <color name="badge_active_text">#135844</color>
+    <color name="badge_inactive">#EDF0F7</color>
+    <color name="error">#AA2539</color>
+    <color name="error_background">#FCE9ED</color>
+    <color name="statistics">#EBE8FF</color>
+    <color name="on_statistics">#332677</color>
+    <color name="ripple">#339692DB</color>
+    <color name="ripple_light">#44FFFFFF</color>
+</resources>
